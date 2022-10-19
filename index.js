@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/signin', (req, res) => {
-    res.send('Вход выполнен!')
+    res.send('Вход HEвыполнен!')
 })
 
 app.post('/signup', (req, res) => {
