@@ -12,20 +12,29 @@
 <div class="container">
     <div class="center_card">
     <h1>BXOD</h1>
-    <a href="/registration.html">registration</a>>
-    <form action="/login" method="post">
-        <span>Логин:</span>
-        <input type="text" placeholder="Введите имя"> 
-        <br>
-        <span>Пароль:</span>
-        <input type="password" placeholder="Введите пароль">
-        <br>
+    <form class="card-body" action="/login" method="post">
+
+        <div class="field">
+        <input type="text" >
+        <span></span>
+        <label>Логин</label>
+        </div>
+
+        <div class="field">
+        <input type="password">
+        <span></span>
+        <label>Пароль</label>
+        
+        </div>
+
+        <div class="field">
         <input type="checkbox">
-        <span>Запомнить меня</span>
-        <br>
+        <span></span>
+        <label>Запомнить меня</label>
+        </div>
     
         <input type="submit" value="Войти">
-    
+        <a href="/registration.html">registration</a>
     </form>
     </div>
 </div>

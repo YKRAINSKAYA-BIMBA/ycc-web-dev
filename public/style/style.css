@@ -10,7 +10,7 @@
 .container{
     overflow: hidden;
     height: 100vh;
-    background: radial-gradient(#0099ff, rgb(255, 230, 0));
+    background: radial-gradient(#00ccff, rgb(255, 255, 255));
 
 }
 .center_card{
@@ -18,13 +18,56 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: blue;
+    background: rgb(255, 255, 255);
     width: 400px;
     border-radius: 10px;
-    box-shadow: 10px 100px 15px rgba(0, 0, 0, 1);
-}
+
+} 
 .center_card h1{
     text-align: center;
     padding:20px 0;
     border-bottom: 1px solid silver;
+}
+.center_card .card-body{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+.card-body .field{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 20px 0;
+}
+.field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.field label {
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    color: silver;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.field span::before{
+    content:"";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+}
+.field input:focus ~ label, 
+.field input:valid ~ label{
+    top: -5px;
+    color: black;
+    
 }
